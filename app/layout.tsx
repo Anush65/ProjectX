@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Providers } from "@/components/providers";
 import { RoleRedirect } from "@/components/role-redirect";
+import "tw-animate-css";
+import "shadcn/tailwind.css";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { Suspense } from "react";

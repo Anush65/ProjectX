@@ -7,8 +7,8 @@ import { Toaster } from "sonner";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "TetherX Hackathon - CodeChef VITCC",
-  description: "Manage judges, teams, and rounds for the CodeChef Hackathon",
+  title: "ProjectX",
+  description: "Manage judges, teams, and rounds for ProjectX",
   icons: {
     icon: "/logo.png ",
   },
@@ -20,18 +20,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <html lang="en" suppressHydrationWarning>
-        <body className="antialiased">
-          <Providers>
+    <html lang="en" suppressHydrationWarning>
+      <body className="antialiased">
+        <Providers>
+          <Suspense fallback={<div>Loading...</div>}>
             <RoleRedirect />
             <TooltipProvider>
               {children}
               <Toaster position="top-right" />
             </TooltipProvider>
-          </Providers>
-        </body>
-      </html>
-    </Suspense>
+          </Suspense>
+        </Providers>
+      </body>
+    </html>
   );
 }

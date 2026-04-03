@@ -40,9 +40,9 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader className="border-b p-4">
         <div className="flex justify-center items-center gap-2">
-          <Image src={"/logo.png"} width={32} height={32} alt="TetherX Logo" />
+          <Image src={"/logo.png"} width={32} height={32} alt="ProjectX Logo" />
           <h2 className="logo text-lg font-semibold tracking-tight capitalize">
-            TetherX Hackathon
+            ProjectX
           </h2>
         </div>
       </SidebarHeader>
